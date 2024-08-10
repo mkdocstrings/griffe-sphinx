@@ -28,7 +28,9 @@ classifiers = [
     "Topic :: Utilities",
     "Typing :: Typed",
 ]
-dependencies = []
+dependencies = [
+    "griffe>=0.48",
+]
 
 [project.urls]
 Homepage = "https://mkdocstrings.github.io/griffe-sphinx"
