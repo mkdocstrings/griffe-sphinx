@@ -7,7 +7,10 @@ goals:
     features: []
   1500:
     name: HyperLamp Navigation Tips
-    features: []
+    features:
+    - name: "[Project] Parse Sphinx-comments above attributes as docstrings"
+      ref: /
+      since: 2024/08/15
   2000:
     name: FusionDrive Ejection Configuration
     features: []
