@@ -1,0 +1,12 @@
+# Griffe Sphinx
+
+> Parse Sphinx-comments above attributes as docstrings.
+
+## Usage
+
+- [Overview](https://mkdocstrings.github.io/griffe-sphinx/index.md)
+
+## API
+
+- [API reference](https://mkdocstrings.github.io/griffe-sphinx/reference/api/index.md)
+
