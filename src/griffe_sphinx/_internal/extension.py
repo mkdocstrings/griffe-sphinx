@@ -4,7 +4,7 @@ from typing import Any
 
 import griffe
 
-logger = griffe.get_logger("griffe_sphinx")
+_logger = griffe.get_logger("griffe_sphinx")
 
 
 class SphinxCommentsExtension(griffe.Extension):
@@ -17,9 +17,16 @@ class SphinxCommentsExtension(griffe.Extension):
         agent: griffe.Visitor | griffe.Inspector,
         **kwargs: Any,  # noqa: ARG002
     ) -> None:
+        """Parse Sphinx-comments above attributes as docstrings.
+
+        Parameters:
+            attr: The attribute being visited.
+            agent: The visitor or inspector visiting the attribute.
+            **kwargs: Additional keyword arguments.
+        """
         if attr.docstring is None:
             if attr.lineno is None or attr.endlineno is None:
-                logger.debug(f"Skipping Sphinx-comments parsing for {attr.path}: lineno or endlineno is None")
+                _logger.debug(f"Skipping Sphinx-comments parsing for {attr.path}: lineno or endlineno is None")
                 return
             if isinstance(attr.filepath, list):
                 # This should never happen (an attribute cannot be defined in a directory/native-namespace package),
