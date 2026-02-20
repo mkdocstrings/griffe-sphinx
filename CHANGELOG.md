@@ -6,6 +6,14 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 <!-- insertion marker -->
+## [0.2.1](https://github.com/mkdocstrings/griffe-sphinx/releases/tag/0.2.1) - 2026-02-20
+
+<small>[Compare with 0.2.0](https://github.com/mkdocstrings/griffe-sphinx/compare/0.2.0...0.2.1)</small>
+
+### Build
+
+- Depend on griffelib instead of griffe ([6eb1f10](https://github.com/mkdocstrings/griffe-sphinx/commit/6eb1f10389a3157acbdac735e685ba7a799f11ac) by Timothée Mazzucotelli).
+
 ## [0.2.0](https://github.com/mkdocstrings/griffe-sphinx/releases/tag/0.2.0) - 2025-11-09
 
 <small>[Compare with 0.1.0](https://github.com/mkdocstrings/griffe-sphinx/compare/0.1.0...0.2.0)</small>
