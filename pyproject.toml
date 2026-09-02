@@ -4,7 +4,7 @@ build-backend = "pdm.backend"
 
 [project]
 name = "griffe-sphinx"
-description = "Parse Sphinx-comments above attributes as docstrings."
+description = "Parse Sphinx-comments about attributes as docstrings."
 authors = [{name = "Timothée Mazzucotelli", email = "dev@pawamoy.fr"}]
 license = "ISC"
 license-files = ["LICENSE"]

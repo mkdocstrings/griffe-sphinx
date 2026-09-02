@@ -1,6 +1,6 @@
 """Griffe Sphinx package.
 
-Parse Sphinx-comments above attributes as docstrings.
+Parse Sphinx-comments about attributes as docstrings.
 """
 
 from __future__ import annotations
