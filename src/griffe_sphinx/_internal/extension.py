@@ -32,15 +32,16 @@ class SphinxCommentsExtension(griffe.Extension):
                 # This should never happen (an attribute cannot be defined in a directory/native-namespace package),
                 # but for good measure we handle the case.
                 return
-            lineno = attr.lineno - 2
+            file_lines = attr.lines_collection[attr.filepath]
+            line_index = attr.lineno - 2  # -1 to go back one line, -1 to convert to a 0-based index.
             lines = []
-            while lineno and (line := attr.lines_collection[attr.filepath][lineno].lstrip()).startswith("#:"):
+            while line_index >= 0 and (line := file_lines[line_index].lstrip()).startswith("#:"):
                 lines.append(line[3:])
-                lineno -= 1
+                line_index -= 1
             if lines:
                 attr.docstring = griffe.Docstring(
                     "\n".join(reversed(lines)),
-                    lineno=lineno + 2,
+                    lineno=line_index + 2,
                     endlineno=attr.lineno - 1,
                     parent=attr,
                     parser=agent.docstring_parser,
