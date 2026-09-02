@@ -82,14 +82,18 @@ class SphinxCommentsExtension(griffe.Extension):
                     _logger.debug(f"Skipping Sphinx-comments parsing for {attr.path}: ast parsing failed")
                     return
             try:
-                has_col_offsets = node.col_offset is not None and node.end_col_offset is not None
+                has_col_offsets = node.col_offset is not None and node.end_col_offset is not None  # ty:ignore[unresolved-attribute]
             except AttributeError:
                 # This shouldn't happen, as node would be an instance of ast.Assign or ast.AnnAssign.
                 has_col_offsets = False
             if not has_col_offsets:
                 _logger.debug(f"Skipping Sphinx-comments parsing for {attr.path}: node missing col offset")
                 return
-            node_end_in_source = node.end_col_offset - node.col_offset
+
+            try:
+                node_end_in_source = node.end_col_offset - node.col_offset  # ty:ignore[unresolved-attribute]
+            except AttributeError:
+                return
             try:
                 comment = attr.source[node_end_in_source:].split("#", maxsplit=1)[1]
             except IndexError:
