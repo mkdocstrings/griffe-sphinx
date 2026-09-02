@@ -1,6 +1,6 @@
 [project]
 site_name = "Griffe Sphinx"
-site_description = "Parse Sphinx-comments above attributes as docstrings."
+site_description = "Parse Sphinx-comments about attributes as docstrings."
 site_author = "Timothée Mazzucotelli"
 site_url = "https://mkdocstrings.github.io/griffe-sphinx"
 repo_url = "https://github.com/mkdocstrings/griffe-sphinx"

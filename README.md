@@ -5,7 +5,7 @@
 [![pypi version](https://img.shields.io/pypi/v/griffe-sphinx.svg)](https://pypi.org/project/griffe-sphinx/)
 [![gitter](https://img.shields.io/badge/matrix-chat-4DB798.svg?style=flat)](https://app.gitter.im/#/room/#griffe-sphinx:gitter.im)
 
-Parse Sphinx-comments above attributes as docstrings.
+Parse Sphinx-comments about attributes as docstrings.
 
 ## Installation
 
@@ -15,7 +15,7 @@ pip install griffe-sphinx
 
 ## Usage
 
-Griffe Sphinx allows reading Sphinx comments above attribute assignments as docstrings.
+Griffe Sphinx allows reading Sphinx doc comments related to attributes as docstrings.
 
 ```python
 # your_module.py
@@ -41,9 +41,10 @@ class Hello:
     def __init__(self):
         #: Summary of attribute.
         self.attr2 = "sphinx"
+        self.attr3: str  #: Summary of attribute.
 ```
 
-Trailing comments (appearing at the end of a line) are not supported.
+Trailing comments (appearing at the end of a line) are not supported for assignments spanning multiple lines.
 
 You can now enable the extension when loading data with Griffe on the command-line, in Python code or with MkDocs.
 
