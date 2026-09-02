@@ -6,6 +6,14 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 <!-- insertion marker -->
+## [0.3.0](https://github.com/mkdocstrings/griffe-sphinx/releases/tag/0.3.0) - 2026-09-02
+
+<small>[Compare with 0.2.1](https://github.com/mkdocstrings/griffe-sphinx/compare/0.2.1...0.3.0)</small>
+
+### Features
+
+- Support trailing comments ([d903340](https://github.com/mkdocstrings/griffe-sphinx/commit/d903340e5b5b87446e25c85ccfd4f65af982a971) by Grégory Rump). [Issue-4](https://github.com/mkdocstrings/griffe-sphinx/issues/4), [PR-5](https://github.com/mkdocstrings/griffe-sphinx/pull/5)
+
 ## [0.2.1](https://github.com/mkdocstrings/griffe-sphinx/releases/tag/0.2.1) - 2026-02-20
 
 <small>[Compare with 0.2.0](https://github.com/mkdocstrings/griffe-sphinx/compare/0.2.0...0.2.1)</small>
