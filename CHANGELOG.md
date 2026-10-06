@@ -6,6 +6,14 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 <!-- insertion marker -->
+## [0.3.1](https://github.com/mkdocstrings/griffe-sphinx/releases/tag/0.3.1) - 2026-10-06
+
+<small>[Compare with 0.3.0](https://github.com/mkdocstrings/griffe-sphinx/compare/0.3.0...0.3.1)</small>
+
+### Build
+
+- Drop support for Python 3.10 ([ddf1135](https://github.com/mkdocstrings/griffe-sphinx/commit/ddf113584b486c9aa47e0288d376c81e5ad0235b) by Timothée Mazzucotelli).
+
 ## [0.3.0](https://github.com/mkdocstrings/griffe-sphinx/releases/tag/0.3.0) - 2026-09-02
 
 <small>[Compare with 0.2.1](https://github.com/mkdocstrings/griffe-sphinx/compare/0.2.1...0.3.0)</small>
